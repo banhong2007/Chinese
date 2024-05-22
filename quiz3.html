@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSLE Chinese Quiz</title>
+<style>
+  .answer, .explanation {
+    display: none;
+    color: green;
+  }
+  .question {
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+<h1>PSLE Chinese Quiz</h1>
+
+<div class="question">
+  <p>1. 他在比赛前 ____________ ，希望能取得好成绩。</p>
+  <label><input type="radio" name="q1" value="1"> A 紧张</label><br>
+  <label><input type="radio" name="q1" value="2"> B 兴奋</label><br>
+  <label><input type="radio" name="q1" value="3"> C 沮丧</label><br>
+  <label><input type="radio" name="q1" value="4"> D 平静</label><br>
+  <button onclick="checkAnswer('q1', 2, 'a1')">Submit</button>
+  <p id="a1" class="answer">Correct answer: B 兴奋</p>
+  <p id="e1" class="explanation">“兴奋” means excited, which fits the context of feeling before a competition.</p>
+</div>
+
+<div class="question">
+  <p>2. 他的成功 ____________ 于不懈的努力和坚持。</p>
+  <label><input type="radio" name="q2" value="1"> A 阻碍</label><br>
+  <label><input type="radio" name="q2" value="2"> B 依赖</label><br>
+  <label><input type="radio" name="q2" value="3"> C 归功</label><br>
+  <label><input type="radio" name="q2" value="4"> D 限制</label><br>
+  <button onclick="checkAnswer('q2', 3, 'a2')">Submit</button>
+  <p id="a2" class="answer">Correct answer: C 归功</p>
+  <p id="e2" class="explanation">“归功” means to attribute, which fits the context of attributing success to effort and persistence.</p>
+</div>
+
+<div class="question">
+  <p>3. 他在演讲中 ____________ 了许多有趣的故事，赢得了观众的掌声。</p>
+  <label><input type="radio" name="q3" value="1"> A 讲述</label><br>
+  <label><input type="radio" name="q3" value="2"> B 描述</label><br>
+  <label><input type="radio" name="q3" value="3"> C 叙述</label><br>
+  <label><input type="radio" name="q3" value="4"> D 阅读</label><br>
+  <button onclick="checkAnswer('q3', 1, 'a3')">Submit</button>
+  <p id="a3" class="answer">Correct answer: A 讲述</p>
+  <p id="e3" class="explanation">“讲述” means to tell or narrate, which fits the context of telling interesting stories in a speech.</p>
+</div>
+
+<div class="question">
+  <p>4. 他总是 ____________ 面对挑战，从不退缩。</p>
+  <label><input type="radio" name="q4" value="1"> A 勇敢</label><br>
+  <label><input type="radio" name="q4" value="2"> B 怯懦</label><br>
+  <label><input type="radio" name="q4" value="3"> C 犹豫</label><br>
+  <label><input type="radio" name="q4" value="4"> D 逃避</label><br>
+  <button onclick="checkAnswer('q4', 1, 'a4')">Submit</button>
+  <p id="a4" class="answer">Correct answer: A 勇敢</p>
+  <p id="e4" class="explanation">“勇敢” means brave, which fits the context of facing challenges without retreating.</p>
+</div>
+
+<div class="question">
+  <p>5. ____________ 听到这个好消息，大家都欢呼起来。</p>
+  <label><input type="radio" name="q5" value="1"> A 由于</label><br>
+  <label><input type="radio" name="q5" value="2"> B 因为</label><br>
+  <label><input type="radio" name="q5" value="3"> C 虽然</label><br>
+  <label><input type="radio" name="q5" value="4"> D 一旦</label><br>
+  <button onclick="checkAnswer('q5', 4, 'a5')">Submit</button>
+  <p id="a5" class="answer">Correct answer: D 一旦</p>
+  <p id="e5" class="explanation">“一旦” means once, which fits the context of everyone cheering upon hearing the good news.</p>
+</div>
+
+<div class="question">
+  <p>6. 他的解释 ____________ 了我的疑惑。</p>
+  <label><input type="radio" name="q6" value="1"> A 加深</label><br>
+  <label><input type="radio" name="q6" value="2"> B 解除了</label><br>
+  <label><input type="radio" name="q6" value="3"> C 引发</label><br>
+  <label><input type="radio" name="q6" value="4"> D 激发</label><br>
+  <button onclick="checkAnswer('q6', 2, 'a6')">Submit</button>
+  <p id="a6" class="answer">Correct answer: B 解除了</p>
+  <p id="e6" class="explanation">“解除了” means to remove or resolve, which fits the context of resolving doubts.</p>
+</div>
+
+<div class="question">
+  <p>7. 他对艺术有 ____________ 的兴趣，经常参加各种艺术展览。</p>
+  <label><input type="radio" name="q7" value="1"> A 轻微</label><br>
+  <label><input type="radio" name="q7" value="2"> B 浓厚</label><br>
+  <label><input type="radio" name="q7" value="3"> C 短暂</label><br>
+  <label><input type="radio" name="q7" value="4"> D 模糊</label><br>
+  <button onclick="checkAnswer('q7', 2, 'a7')">Submit</button>
+  <p id="a7" class="answer">Correct answer: B 浓厚</p>
+  <p id="e7" class="explanation">“浓厚” means strong or keen, which fits the context of having a keen interest in art.</p>
+</div>
+
+<div class="question">
+  <p>8. 在困难面前，他从不 ____________，总是坚持到底。</p>
+  <label><input type="radio" name="q8" value="1"> A 放弃</label><br>
+  <label><input type="radio" name="q8" value="2"> B 退缩</label><br>
+  <label><input type="radio" name="q8" value="3"> C 犹豫</label><br>
+  <label><input type="radio" name="q8" value="4"> D 避免</label><br>
+  <button onclick="checkAnswer('q8', 1, 'a8')">Submit</button>
+  <p id="a8" class="answer">Correct answer: A 放弃</p>
+  <p id="e8" class="explanation">“放弃” means to give up, which fits the context of never giving up in the face of difficulties.</p>
+</div>
+
+<div class="question">
+  <p>9. 他的 ____________ 赢得了大家的尊重。</p>
+  <label><input type="radio" name="q9" value="1"> A 努力</label><br>
+  <label><input type="radio" name="q9" value="2"> B 成就</label><br>
+  <label><input type="radio" name="q9" value="3"> C 言辞</label><br>
+  <label><input type="radio" name="q9" value="4"> D 谦虚</label><br>
+  <button onclick="checkAnswer('q9', 4, 'a9')">Submit</button>
+  <p id="a9" class="answer">Correct answer: D 谦虚</p>
+  <p id="e9" class="explanation">“谦虚” means humility, which fits the context of winning respect through humility.</p>
+</div>
+
+<div class="question">
+  <p>10. ____________ 他已经很努力了，但还是没有取得好成绩。</p>
+  <label><input type="radio" name="q10" value="1"> A 虽然</label><br>
+  <label><input type="radio" name="q10" value="2"> B 因为</label><br>
+  <label><input type="radio" name="q10" value="3"> C 如果</label><br>
+  <label><input type="radio" name="q10" value="4"> D 但是</label><br>
+  <button onclick="checkAnswer('q10', 1, 'a10')">Submit</button>
+  <p id="a10" class="answer">Correct answer: A 虽然</p>
+  <p id="e10" class="explanation">“虽然” means although, which fits the context of stating that despite his efforts, he did not achieve good results.</p>
+</div>
+
+<div class="question">
+  <p>11. 他对这项任务表现出 ____________ 的责任感。</p>
+  <label><input type="radio" name="q11" value="1"> A 强烈</label><br>
+  <label><input type="radio" name="q11" value="2"> B 微弱</label><br>
+  <label><input type="radio" name="q11" value="3"> C 短暂</label><br>
+  <label><input type="radio" name="q11" value="4"> D 模糊</label><br>
+  <button onclick="checkAnswer('q11', 1, 'a11')">Submit</button>
+  <p id="a11" class="answer">Correct answer: A 强烈</p>
+  <p id="e11" class="explanation">“强烈” means strong, which fits the context of showing a strong sense of responsibility.</p>
+</div>
+
+<div class="question">
+  <p>12. 他对这次的失败 ____________ ，希望能从中吸取教训。</p>
+  <label><input type="radio" name="q12" value="1"> A 毫不在意</label><br>
+  <label><input type="radio" name="q12" value="2"> B 悲观失望</label><br>
+  <label><input type="radio" name="q12" value="3"> C 深感懊悔</label><br>
+  <label><input type="radio" name="q12" value="4"> D 兴高采烈</label><br>
+  <button onclick="checkAnswer('q12', 3, 'a12')">Submit</button>
+  <p id="a12" class="answer">Correct answer: C 深感懊悔</p>
+  <p id="e12" class="explanation">“深感懊悔” means deeply regretful, which fits the context of feeling regretful about failure.</p>
+</div>
+
+<div class="question">
+  <p>13. 他在 ____________ 面前表现得非常冷静。</p>
+  <label><input type="radio" name="q13" value="1"> A 困难</label><br>
+  <label><input type="radio" name="q13" value="2"> B 喜悦</label><br>
+  <label><input type="radio" name="q13" value="3"> C 成功</label><br>
+  <label><input type="radio" name="q13" value="4"> D 机遇</label><br>
+  <button onclick="checkAnswer('q13', 1, 'a13')">Submit</button>
+  <p id="a13" class="answer">Correct answer: A 困难</p>
+  <p id="e13" class="explanation">“困难” means difficulties, which fits the context of being calm in the face of difficulties.</p>
+</div>
+
+<div class="question">
+  <p>14. 他对自己的 ____________ 感到非常自豪。</p>
+  <label><input type="radio" name="q14" value="1"> A 家庭</label><br>
+  <label><input type="radio" name="q14" value="2"> B 成就</label><br>
+  <label><input type="radio" name="q14" value="3"> C 朋友</label><br>
+  <label><input type="radio" name="q14" value="4"> D 爱好</label><br>
+  <button onclick="checkAnswer('q14', 2, 'a14')">Submit</button>
+  <p id="a14" class="answer">Correct answer: B 成就</p>
+  <p id="e14" class="explanation">“成就” means achievements, which fits the context of feeling proud of one's achievements.</p>
+</div>
+
+<div class="question">
+  <p>15. ____________ 他遇到了很多困难，但他从未放弃。</p>
+  <label><input type="radio" name="q15" value="1"> A 由于</label><br>
+  <label><input type="radio" name="q15" value="2"> B 虽然</label><br>
+  <label><input type="radio" name="q15" value="3"> C 因此</label><br>
+  <label><input type="radio" name="q15" value="4"> D 如果</label><br>
+  <button onclick="checkAnswer('q15', 2, 'a15')">Submit</button>
+  <p id="a15" class="answer">Correct answer: B 虽然</p>
+  <p id="e15" class="explanation">“虽然” means although, which fits the context of stating that despite difficulties, he never gave up.</p>
+</div>
+
+<div class="question">
+  <p>16. 他在团队中 ____________ 了重要的作用。</p>
+  <label><input type="radio" name="q16" value="1"> A 起到了</label><br>
+  <label><input type="radio" name="q16" value="2"> B 放弃了</label><br>
+  <label><input type="radio" name="q16" value="3"> C 逃避了</label><br>
+  <label><input type="radio" name="q16" value="4"> D 忽视了</label><br>
+  <button onclick="checkAnswer('q16', 1, 'a16')">Submit</button>
+  <p id="a16" class="answer">Correct answer: A 起到了</p>
+  <p id="e16" class="explanation">“起到了” means to play (a role), which fits the context of playing an important role in the team.</p>
+</div>
+
+<div class="question">
+  <p>17. 他在演讲中 ____________ 地回答了所有问题。</p>
+  <label><input type="radio" name="q17" value="1"> A 迟疑</label><br>
+  <label><input type="radio" name="q17" value="2"> B 自信</label><br>
+  <label><input type="radio" name="q17" value="3"> C 犹豫</label><br>
+  <label><input type="radio" name="q17" value="4"> D 模糊</label><br>
+  <button onclick="checkAnswer('q17', 2, 'a17')">Submit</button>
+  <p id="a17" class="answer">Correct answer: B 自信</p>
+  <p id="e17" class="explanation">“自信” means confident, which fits the context of answering questions confidently.</p>
+</div>
+
+<div class="question">
+  <p>18. ____________ 天气很冷，但他依然坚持每天早起跑步。</p>
+  <label><input type="radio" name="q18" value="1"> A 由于</label><br>
+  <label><input type="radio" name="q18" value="2"> B 因为</label><br>
+  <label><input type="radio" name="q18" value="3"> C 虽然</label><br>
+  <label><input type="radio" name="q18" value="4"> D 如果</label><br>
+  <button onclick="checkAnswer('q18', 3, 'a18')">Submit</button>
+  <p id="a18" class="answer">Correct answer: C 虽然</p>
+  <p id="e18" class="explanation">“虽然” means although, which fits the context of stating that despite the cold weather, he still insists on running.</p>
+</div>
+
+<div class="question">
+  <p>19. 他在 ____________ 中取得了显著的进步。</p>
+  <label><input type="radio" name="q19" value="1"> A 学习</label><br>
+  <label><input type="radio" name="q19" value="2"> B 工作</label><br>
+  <label><input type="radio" name="q19" value="3"> C 比赛</label><br>
+  <label><input type="radio" name="q19" value="4"> D 旅行</label><br>
+  <button onclick="checkAnswer('q19', 1, 'a19')">Submit</button>
+  <p id="a19" class="answer">Correct answer: A 学习</p>
+  <p id="e19" class="explanation">“学习” means study, which fits the context of making significant progress in studies.</p>
+</div>
+
+<div class="question">
+  <p>20. 他在 ____________ 中展示了出色的领导能力。</p>
+  <label><input type="radio" name="q20" value="1"> A 工作</label><br>
+  <label><input type="radio" name="q20" value="2"> B 比赛</label><br>
+  <label><input type="radio" name="q20" value="3"> C 旅行</label><br>
+  <label><input type="radio" name="q20" value="4"> D 会议</label><br>
+  <button onclick="checkAnswer('q20', 4, 'a20')">Submit</button>
+  <p id="a20" class="answer">Correct answer: D 会议</p>
+  <p id="e20" class="explanation">“会议” means meeting, which fits the context of showing excellent leadership skills in meetings.</p>
+</div>
+
+<script>
+function checkAnswer(questionId, correctAnswer, answerId) {
+  const options = document.getElementsByName(questionId);
+  let selectedValue;
+  for (const option of options) {
+    if (option.checked) {
+      selectedValue = option.value;
+      break;
+    }
+  }
+
+  const answerElement = document.getElementById(answerId);
+  const explanationElement = document.getElementById(answerId.replace('a', 'e'));
+
+  if (parseInt(selectedValue) === correctAnswer) {
+    answerElement.style.display = 'block';
+    explanationElement.style.display = 'block';
+  } else {
+    alert('Incorrect. Please try again.');
+  }
+}
+</script>
+
+</body>
+</html>

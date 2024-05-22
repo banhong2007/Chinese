@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSLE Chinese Quiz</title>
+<style>
+   body {
+    font-size: medium;
+  }
+  .answer, .explanation {
+    display: none;
+    color: green;
+  }
+  .question {
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+<h1>PSLE Chinese Quiz</h1>
+
+<div class="question">
+  <p>1. 人的内心总存在着无穷无尽的物质欲望。很多人来到大卖场，一旦看到那些价廉物美的货品，马上便心情 ____________，大肆采购。</p>
+  <label><input type="radio" name="q1" value="1"> A 宽慰</label><br>
+  <label><input type="radio" name="q1" value="2"> B 波动</label><br>
+  <label><input type="radio" name="q1" value="3"> C 豁达</label><br>
+  <label><input type="radio" name="q1" value="4"> D 振奋</label><br>
+  <button onclick="checkAnswer('q1', 4, 'a1')">Submit</button>
+  <p id="a1" class="answer">Correct answer: D 振奋</p>
+  <p id="e1" class="explanation">“振奋” means to be excited, which fits the context of seeing desirable items in a store.</p>
+</div>
+
+<div class="question">
+  <p>2. 除了欲望的 ____________，商家诱导消费的商业行为也使人常常陷入盲目采购之中。</p>
+  <label><input type="radio" name="q2" value="1"> A 驱使</label><br>
+  <label><input type="radio" name="q2" value="2"> B 引导</label><br>
+  <label><input type="radio" name="q2" value="3"> C 示意</label><br>
+  <label><input type="radio" name="q2" value="4"> D 响应</label><br>
+  <button onclick="checkAnswer('q2', 1, 'a2')">Submit</button>
+  <p id="a2" class="answer">Correct answer: A 驱使</p>
+  <p id="e2" class="explanation">“驱使” means to drive or compel, which is appropriate for describing how desire drives people to buy things.</p>
+</div>
+
+<div class="question">
+  <p>3. 市面上各式各样的促销活动，往往使人变得盲目而冲动，一不小心就买下一大堆完全不在 ____________ 内的物品。</p>
+  <label><input type="radio" name="q3" value="1"> A 期望</label><br>
+  <label><input type="radio" name="q3" value="2"> B 计划</label><br>
+  <label><input type="radio" name="q3" value="3"> C 心意</label><br>
+  <label><input type="radio" name="q3" value="4"> D 安排</label><br>
+  <button onclick="checkAnswer('q3', 2, 'a3')">Submit</button>
+  <p id="a3" class="answer">Correct answer: B 计划</p>
+  <p id="e3" class="explanation">“计划” means plan, which fits the context of buying things not originally planned.</p>
+</div>
+
+<div class="question">
+  <p>4. 如果顾客刷卡消费，便感觉不到掏钱的痛。于是有的人便 ____________ 地大买特买，乐呵呵地满载而归。</p>
+  <label><input type="radio" name="q4" value="1"> A 若无其事</label><br>
+  <label><input type="radio" name="q4" value="2"> B 自得其乐</label><br>
+  <label><input type="radio" name="q4" value="3"> C 不假思索</label><br>
+  <label><input type="radio" name="q4" value="4"> D 理所当然</label><br>
+  <button onclick="checkAnswer('q4', 3, 'a4')">Submit</button>
+  <p id="a4" class="answer">Correct answer: C 不假思索</p>
+  <p id="e4" class="explanation">“不假思索” means without thinking, which fits the context of buying things impulsively.</p>
+</div>
+
+<div class="question">
+  <p>5. 每当我们动心时， ____________ 先问问自己：眼前这物件真的需要吗？这样想一想，也许能消除购买的欲望。</p>
+  <label><input type="radio" name="q5" value="1"> A 固然</label><br>
+  <label><input type="radio" name="q5" value="2"> B 不妨</label><br>
+  <label><input type="radio" name="q5" value="3"> C 与其</label><br>
+  <label><input type="radio" name="q5" value="4"> D 宁可</label><br>
+  <button onclick="checkAnswer('q5', 2, 'a5')">Submit</button>
+  <p id="a5" class="answer">Correct answer: B 不妨</p>
+  <p id="e5" class="explanation">“不妨” means might as well, which fits the context of suggesting a reflective action.</p>
+</div>
+
+<script>
+function checkAnswer(questionId, correctAnswer, answerId) {
+  const options = document.getElementsByName(questionId);
+  let selectedValue;
+  for (const option of options) {
+    if (option.checked) {
+      selectedValue = option.value;
+      break;
+    }
+  }
+
+  const answerElement = document.getElementById(answerId);
+  const explanationElement = document.getElementById(answerId.replace('a', 'e'));
+
+  if (parseInt(selectedValue) === correctAnswer) {
+    answerElement.style.display = 'block';
+    explanationElement.style.display = 'block';
+  } else {
+    alert('Incorrect. Please try again.');
+  }
+}
+</script>
+
+</body>
+</html>

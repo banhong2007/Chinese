@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSLE Chinese Quiz</title>
+<style>
+  .answer, .explanation {
+    display: none;
+    color: green;
+  }
+  .question {
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+<h1>PSLE Chinese Quiz</h1>
+
+<div class="question">
+  <p>1. 在寒冷的冬天，人们一进到温暖的室内，马上便感到心情 ____________。</p>
+  <label><input type="radio" name="q1" value="1"> A 烦躁</label><br>
+  <label><input type="radio" name="q1" value="2"> B 舒畅</label><br>
+  <label><input type="radio" name="q1" value="3"> C 沮丧</label><br>
+  <label><input type="radio" name="q1" value="4"> D 紧张</label><br>
+  <button onclick="checkAnswer('q1', 2, 'a1')">Submit</button>
+  <p id="a1" class="answer">Correct answer: B 舒畅</p>
+  <p id="e1" class="explanation">“舒畅” means to feel comfortable, which fits the context of entering a warm room in winter.</p>
+</div>
+
+<div class="question">
+  <p>2. 除了好奇心的 ____________，科学家的探索精神也使他们不断创新。</p>
+  <label><input type="radio" name="q2" value="1"> A 驱动</label><br>
+  <label><input type="radio" name="q2" value="2"> B 阻碍</label><br>
+  <label><input type="radio" name="q2" value="3"> C 引导</label><br>
+  <label><input type="radio" name="q2" value="4"> D 延误</label><br>
+  <button onclick="checkAnswer('q2', 1, 'a2')">Submit</button>
+  <p id="a2" class="answer">Correct answer: A 驱动</p>
+  <p id="e2" class="explanation">“驱动” means to drive or motivate, which is appropriate for describing how curiosity drives scientists.</p>
+</div>
+
+<div class="question">
+  <p>3. 他本来计划去旅游，但突如其来的工作使他 ____________ 了出行计划。</p>
+  <label><input type="radio" name="q3" value="1"> A 取消</label><br>
+  <label><input type="radio" name="q3" value="2"> B 继续</label><br>
+  <label><input type="radio" name="q3" value="3"> C 推迟</label><br>
+  <label><input type="radio" name="q3" value="4"> D 完成</label><br>
+  <button onclick="checkAnswer('q3', 1, 'a3')">Submit</button>
+  <p id="a3" class="answer">Correct answer: A 取消</p>
+  <p id="e3" class="explanation">“取消” means to cancel, which fits the context of changing travel plans due to work.</p>
+</div>
+
+<div class="question">
+  <p>4. 他的言行总是 ____________，从不考虑后果。</p>
+  <label><input type="radio" name="q4" value="1"> A 深思熟虑</label><br>
+  <label><input type="radio" name="q4" value="2"> B 不假思索</label><br>
+  <label><input type="radio" name="q4" value="3"> C 三思而行</label><br>
+  <label><input type="radio" name="q4" value="4"> D 精打细算</label><br>
+  <button onclick="checkAnswer('q4', 2, 'a4')">Submit</button>
+  <p id="a4" class="answer">Correct answer: B 不假思索</p>
+  <p id="e4" class="explanation">“不假思索” means without thinking, which fits the context of acting without considering consequences.</p>
+</div>
+
+<div class="question">
+  <p>5. 每次购物前， ____________ 先想想这个东西是否真的需要。</p>
+  <label><input type="radio" name="q5" value="1"> A 固然</label><br>
+  <label><input type="radio" name="q5" value="2"> B 不妨</label><br>
+  <label><input type="radio" name="q5" value="3"> C 然而</label><br>
+  <label><input type="radio" name="q5" value="4"> D 与其</label><br>
+  <button onclick="checkAnswer('q5', 2, 'a5')">Submit</button>
+  <p id="a5" class="answer">Correct answer: B 不妨</p>
+  <p id="e5" class="explanation">“不妨” means might as well, which fits the context of suggesting a reflective action before shopping.</p>
+</div>
+
+<div class="question">
+  <p>6. 他的决定 ____________ 了团队的努力，大家都很失望。</p>
+  <label><input type="radio" name="q6" value="1"> A 支持</label><br>
+  <label><input type="radio" name="q6" value="2"> B 无视</label><br>
+  <label><input type="radio" name="q6" value="3"> C 表扬</label><br>
+  <label><input type="radio" name="q6" value="4"> D 否定</label><br>
+  <button onclick="checkAnswer('q6', 4, 'a6')">Submit</button>
+  <p id="a6" class="answer">Correct answer: D 否定</p>
+  <p id="e6" class="explanation">“否定” means to negate, which fits the context of negating the team's efforts.</p>
+</div>
+
+<div class="question">
+  <p>7. 他做事总是 ____________，从来不会犹豫。</p>
+  <label><input type="radio" name="q7" value="1"> A 毫不犹豫</label><br>
+  <label><input type="radio" name="q7" value="2"> B 畏首畏尾</label><br>
+  <label><input type="radio" name="q7" value="3"> C 迟疑不决</label><br>
+  <label><input type="radio" name="q7" value="4"> D 优柔寡断</label><br>
+  <button onclick="checkAnswer('q7', 1, 'a7')">Submit</button>
+  <p id="a7" class="answer">Correct answer: A 毫不犹豫</p>
+  <p id="e7" class="explanation">“毫不犹豫” means without hesitation, which fits the context of acting decisively.</p>
+</div>
+
+<div class="question">
+  <p>8. 在紧急情况下，他 ____________ 地处理了问题。</p>
+  <label><input type="radio" name="q8" value="1"> A 慌慌张张</label><br>
+  <label><input type="radio" name="q8" value="2"> B 不慌不忙</label><br>
+  <label><input type="radio" name="q8" value="3"> C 手忙脚乱</label><br>
+  <label><input type="radio" name="q8" value="4"> D 漫不经心</label><br>
+  <button onclick="checkAnswer('q8', 2, 'a8')">Submit</button>
+  <p id="a8" class="answer">Correct answer: B 不慌不忙</p>
+  <p id="e8" class="explanation">“不慌不忙” means calmly, which fits the context of handling an emergency calmly.</p>
+</div>
+
+<div class="question">
+  <p>9. 他在关键时刻 ____________ 出了惊人的勇气。</p>
+  <label><input type="radio" name="q9" value="1"> A 表现</label><br>
+  <label><input type="radio" name="q9" value="2"> B 展现</label><br>
+  <label><input type="radio" name="q9" value="3"> C 显示</label><br>
+  <label><input type="radio" name="q9" value="4"> D 发挥</label><br>
+  <button onclick="checkAnswer('q9', 4, 'a9')">Submit</button>
+  <p id="a9" class="answer">Correct answer: D 发挥</p>
+  <p id="e9" class="explanation">“发挥” means to display or exert, which fits the context of showing courage at a critical moment.</p>
+</div>
+
+<div class="question">
+  <p>10. 我们要 ____________ 对待每一次失败，从中吸取教训。</p>
+  <label><input type="radio" name="q10" value="1"> A 轻视</label><br>
+  <label><input type="radio" name="q10" value="2"> B 重视</label><br>
+  <label><input type="radio" name="q10" value="3"> C 忽视</label><br>
+  <label><input type="radio" name="q10" value="4"> D 躲避</label><br>
+  <button onclick="checkAnswer('q10', 2, 'a10')">Submit</button>
+  <p id="a10" class="answer">Correct answer: B 重视</p>
+  <p id="e10" class="explanation">“重视” means to value or take seriously, which fits the context of learning from failures.</p>
+</div>
+
+<script>
+function checkAnswer(questionId, correctAnswer, answerId) {
+  const options = document.getElementsByName(questionId);
+  let selectedValue;
+  for (const option of options) {
+    if (option.checked) {
+      selectedValue = option.value;
+      break;
+    }
+  }
+
+  const answerElement = document.getElementById(answerId);
+  const explanationElement = document.getElementById(answerId.replace('a', 'e'));
+
+  if (parseInt(selectedValue) === correctAnswer) {
+    answerElement.style.display = 'block';
+    explanationElement.style.display = 'block';
+  } else {
+    alert('Incorrect. Please try again.');
+  }
+}
+</script>
+
+</body>
+</html>
